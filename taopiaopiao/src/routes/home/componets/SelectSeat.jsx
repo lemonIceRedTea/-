@@ -66,9 +66,9 @@ class SelectSeat extends Component {
       }
     };
 
-    this.emptyImage.src = '/source/seat-empty.png';
-    this.soldImage.src = '/source/seat-sold.png';
-    this.selectImage.src = '/source/seat-selected.png';
+    this.emptyImage.src = `${process.env.PUBLIC_URL}/source/seat-empty.png`;
+    this.soldImage.src = `${process.env.PUBLIC_URL}/source/seat-sold.png`;
+    this.selectImage.src = `${process.env.PUBLIC_URL}/source/seat-selected.png`;
 
     this.emptyImage.onload = imgOnload;
     this.soldImage.onload = imgOnload;

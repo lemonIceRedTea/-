@@ -8,6 +8,7 @@
 //city comment seat index 可用path
 //basePath www.easy-mock.com/mock/5a964cffdd997801d1e291fe/movie
 export default async function (path, opt) {
+  // const url = "https://www.easy-mock.com/mock/5b8e257ec9ca7b74cc7865e8" + path;
   const url = "https://www.easy-mock.com/mock/5a964cffdd997801d1e291fe/movie" + path;
   const options = Object.assign({
     method: 'GET'

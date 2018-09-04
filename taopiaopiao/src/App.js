@@ -3,7 +3,6 @@ import {BrowserRouter, Route, Switch, Redirect} from 'react-router-dom';
 import Home from "./routes/home";
 import My from './routes/my';
 import './App.css';
-import './normalize.css';
 
 class App extends Component {
   render() {

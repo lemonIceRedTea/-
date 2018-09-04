@@ -181,7 +181,6 @@
         position: relative;
         height: 50px;
         width: 60px;
-        background-image: url("/source/image/asset1.jpeg");
         background-size: cover;
         box-shadow: 3px 1px 1px 0px #999999; }
       .movieDetail__content .mdModule__musicList .mdMusicItem__info {

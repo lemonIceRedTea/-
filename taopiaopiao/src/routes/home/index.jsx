@@ -3,7 +3,7 @@
  * @Des:  首页
  * @Date: 2018-08-24 21:47:56
  * @Last Modified by: lemonIceRedTea
- * @Last Modified time: 2018-08-26 23:38:59
+ * @Last Modified time: 2018-09-04 16:40:50
  */
 import React, { Component } from 'react';
 import ReactDom from 'react-dom';
@@ -19,6 +19,8 @@ import CityLayer from './componets/CityLayer';
 import request from '../../helpers/request';
 import MovieItem from './componets/MovieItem';
 import MovieDetail from './componets/MovieDetail';
+
+// const baseUrl = 'https://lemoniceredtea.github.io/taopiaopiao';
 
 class home extends Component {
   state = {
@@ -57,6 +59,12 @@ class home extends Component {
   getData = async () => {
     const data = await request('/index');
     const { city, poster, movie } = data;
+    for (let i = 0; i < poster.length; i++) {
+      poster[i].image = process.env.PUBLIC_URL + poster[i].image;
+    }
+    for (let i = 0; i < movie.length; i++) {
+      movie[i].poster = process.env.PUBLIC_URL + movie[i].poster;
+    }
     this.setState({
       city,
       poster,

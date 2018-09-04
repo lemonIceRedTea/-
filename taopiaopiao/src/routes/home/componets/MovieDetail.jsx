@@ -153,10 +153,10 @@ class MovieDetail extends Component {
           <div className="movieDetail_module mdModule">
             <div className="mdModule__title">演职人员</div>
             <div className="mdModule__imageList">
-              <img src="/source/artist/asset1.jpeg" alt="" />
-              <img src="/source/artist/asset2.jpeg" alt="" />
-              <img src="/source/artist/asset3.jpeg" alt="" />
-              <img src="/source/artist/asset4.jpeg" alt="" />
+              <img src={`${process.env.PUBLIC_URL}/source/artist/asset1.jpeg`} alt="" />
+              <img src={`${process.env.PUBLIC_URL}/source/artist/asset2.jpeg`} alt="" />
+              <img src={`${process.env.PUBLIC_URL}/source/artist/asset3.jpeg`} alt="" />
+              <img src={`${process.env.PUBLIC_URL}/source/artist/asset4.jpeg`} alt="" />
             </div>
           </div>
           {/* 此处插入评论模块  Comment*/}
@@ -221,14 +221,16 @@ class MovieDetail extends Component {
             <div className="mdModule__title">电影原声</div>
             <div className="mdModule__musicList">
               <div className="mdModule__musicItem mdMusicItem">
-                <div className="mdMusicItem__avatar" />
+                <div className="mdMusicItem__avatar" style={{
+            backgrounImage: `url(${process.env.PUBLIC_URL}/source/image/asset1.jpeg)`}}/>
                 <div className="mdMusicItem__info">
                   <div className="mdMusicItem__name">Innocent</div>
                   <div className="mdMusicItem__origin">专辑</div>
                 </div>
               </div>
               <div className="mdModule__musicItem mdMusicItem">
-                <div className="mdMusicItem__avatar" />
+                <div className="mdMusicItem__avatar" style={{
+            backgrounImage: `url(${process.env.PUBLIC_URL}/source/image/asset1.jpeg)`}} />
                 <div className="mdMusicItem__info">
                   <div className="mdMusicItem__name">Innocent</div>
                   <div className="mdMusicItem__origin">专辑</div>

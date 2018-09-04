@@ -17,7 +17,8 @@ class My extends Component {
             </div>
           </OperateBar>
           <div className="my__info">
-            <div className="my__avatar"></div>
+            <div className="my__avatar" style={{
+    backgroundImage: `url(${process.env.PUBLIC_URL}/source/avatar.jpeg)`}}></div>
             <div className="my__detail">
               <div className="my__name">sunshine</div>
               <div className="my__focus">
